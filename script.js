@@ -3,6 +3,8 @@ let autoclickers = 0;
 let factories = 0;
 let autoclickerPrice = 10;
 let factoryPrice = 100;
+let pps = autoclickers + factories * 5;
+
 
 function updateDisplay() {
     document.getElementById("clipCount").innerText = `Paperclips: ${paperclips}`;
