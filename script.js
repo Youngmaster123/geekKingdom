@@ -3,11 +3,14 @@ let autoclickers = 0;
 let factories = 0;
 let autoclickerPrice = 10;
 let factoryPrice = 100;
-const button2 = document.getElementById("Autoclicker");
 
 function updateDisplay() {
     document.getElementById("clipCount").innerText = `Paperclips: ${paperclips}`;
-    button2.textContent = "Buy Autoclicker (${autoclickerPrice} clips)";
+    document.getElementById("Autoclicker").textContent = "Buy Autoclicker (${autoclickerPrice} clips)";
+    document.getElementById("Factory").textContent = `Buy Factory (${factoryPrice} clips)`;
+    document.getElementById("Autoclicker").disabled = paperclips < autoclickerPrice;
+    document.getElementById("Factory").disabled = paperclips < factoryPrice;
+
 }
 
 function makePaperclip() {
@@ -20,7 +23,6 @@ function buyAutoClicker() {
         paperclips -= autoclickerPrice;
         autoclickers++;
         autoclickerPrice = Math.floor(autoclickerPrice * 1.2); // Price increases
-        
         updateDisplay();
     }
 }
