@@ -11,6 +11,7 @@ function updateDisplay() {
     document.getElementById("Autoclicker").innerText = `Buy Autoclicker (${autoclickerPrice} clips)`;
     document.getElementById("Factory").innerText = `Buy Factory (${factoryPrice} clips)`;
 
+    document.getElemnetByID("pps").innerText = `Per Second: ${pps}`;
     document.getElementById("Autoclicker").disabled = paperclips < autoclickerPrice;
     document.getElementById("Factory").disabled = paperclips < factoryPrice;
 }
