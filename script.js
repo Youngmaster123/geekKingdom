@@ -16,7 +16,7 @@ function updateDisplay() {
     document.getElementById("pps").innerText = `Per Second: ${pps}`;
 
     document.getElementById("Autoclicker").disabled = !(paperclips >= autoclickerPrice);
-document.getElementById("Factory").disabled = !(paperclips >= factoryPrice);
+    document.getElementById("Factory").disabled = !(paperclips >= factoryPrice);
 
 
 function makePaperclip() {
