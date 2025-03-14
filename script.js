@@ -6,7 +6,7 @@ let factoryPrice = 100;
 
 function updateDisplay() {
     document.getElementById("clipCount").innerText = `Paperclips: ${paperclips}`;
-    document.getElementById("Autoclicker").textContent = "Buy Autoclicker (${autoclickerPrice} clips)";
+    document.getElementById("Autoclicker").textContent = `Buy Autoclicker (${autoclickerPrice} clips)`;
     document.getElementById("Factory").textContent = `Buy Factory (${factoryPrice} clips)`;
     document.getElementById("Autoclicker").disabled = paperclips < autoclickerPrice;
     document.getElementById("Factory").disabled = paperclips < factoryPrice;
