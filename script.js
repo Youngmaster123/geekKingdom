@@ -3,6 +3,7 @@ let autoclickers = 0;
 let factories = 0;
 let autoclickerPrice = 10;
 let factoryPrice = 100;
+let pps = 0:
 
 
 function updateDisplay() {
