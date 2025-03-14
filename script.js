@@ -19,7 +19,7 @@ function buyAutoClicker() {
         paperclips -= autoclickerPrice;
         autoclickers++;
         autoclickerPrice = Math.floor(autoclickerPrice * 1.2); // Price increases
-        button2.textContent = "Buy Autoclicker (${autoclickerPrice})";
+        button2.textContent = "Buy Autoclicker (${autoclickerPrice} clips)";
         updateDisplay();
     }
 }
