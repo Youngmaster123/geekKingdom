@@ -5,19 +5,19 @@ let autoclickerPrice = 10;
 let factoryPrice = 100;
 let pps = 0;
 
-
 function updateDisplay() {
-     pps = autoclickers + factories * 5;
-    
+    pps = autoclickers + factories * 5;
+
     document.getElementById("clipCount").innerText = `Paperclips: ${paperclips}`;
     document.getElementById("Autoclicker").innerText = `Buy Autoclicker (${autoclickerPrice} clips)`;
     document.getElementById("Factory").innerText = `Buy Factory (${factoryPrice} clips)`;
 
-    document.getElementByID("pps").innerText = `Per Second: ${pps}`;
+    // ✅ Fixed the typo here:
+    document.getElementById("pps").innerText = `Per Second: ${pps}`;
+
     document.getElementById("Autoclicker").disabled = paperclips < autoclickerPrice;
     document.getElementById("Factory").disabled = paperclips < factoryPrice;
 }
-
 
 function makePaperclip() {
     paperclips++;
